@@ -1,15 +1,18 @@
 <script>
-    let nota01 = Number(prompt("digite sua nota 01"))
-    let nota02 = Number(prompt("digite sua segunda nota 02"))
-    
-if(nota01 <= 6 && nota02 <= 6 || nota01 >= 7 && nota02 <= 6 || nota01 <= 6 && nota02 >= 7){
-    alert("Voce está reprovado");
+  let idade = Number(prompt("idade: "));  
+  
+  if(idade >= 0 && idade <= 17){ 
+    alert("Voce é menor da idade.");
 }
-else if(nota01 >= 7 && nota01 <= 10 && nota02 >= 7 && nota02 <= 10 ){
-    alert("Voce está aprovado");
+
+else if(idade >= 18 && idade <= 64) { 
+    alert("Voce é adulto.");
+}
+else if(idade >= 65 ){
+    alert("Voce é idoso.");
 }
 else{
-    alert("não existe")
+    alert("idade inválida é exibida.");
 }
 
 </script>
